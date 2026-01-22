@@ -65,6 +65,8 @@ Model Header containing AccessToken
 |TaxScheme|Tax Scheme|`string`|5|||
 |SchemeId|Scheme Id|`string`|5|||
 |DocumentType|Document Type|`string`|10|||
+|Notes|Notes|`string`|4000|||
+|DocmanDocumentId|Docman Document Id|`number`||||
 |InvoiceRecordLegs|see <b><a href="/#reference/data-object-definitions/invoice-leg/invoice-leg">Invoice Legs</a></b> object|[array] of `object`||||
 
 
@@ -122,6 +124,8 @@ Model Header containing AccessToken
 |TaxScheme|Tax Scheme|`string`|5|||
 |SchemeId|Scheme Id|`string`|5|||
 |DocumentType|Document Type|`string`|10|||
+|Notes|Notes|`string`|4000|||
+|DocmanDocumentId|Docman Document Id|`number`||||
 |InvoiceRecordLegs|see <b><a href="/#reference/data-object-definitions/invoice-leg/invoice-leg-for-create">Invoice Legs</a></b> object|[array] of `object`|||Required|
 
 <hr />
@@ -182,6 +186,8 @@ Model Header containing AccessToken
 |TaxScheme|Tax Scheme|`string`|5|||
 |SchemeId|Scheme Id|`string`|5|||
 |DocumentType|Document Type|`string`|10|||
+|Notes|Notes|`string`|4000|||
+|DocmanDocumentId|Docman Document Id|`number`||||
 |InvoiceRecordLegs|see <b><a href="/#reference/data-object-definitions/invoice-leg/invoice-leg">Invoice Legs</a></b> object|[array] of `object`|||Required|
 
 <hr />
@@ -426,6 +432,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + TaxScheme: VAT (string)
 + SchemeId: `9944` (string)
 + DocumentType: `123` (string)
++ Notes: Received ready for processing (string)
++ DocmanDocumentId: 10101 (number)
 + InvoiceRecordLegs (required, array [InvoiceLeg1Create, InvoiceLeg2Create])
 
 ## InvoiceIdResponse (object)
@@ -486,6 +494,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + TaxScheme: VAT (string)
 + SchemeId: `9944` (string)
 + DocumentType: `123` (string)
++ Notes: Received ready for processing (string)
++ DocmanDocumentId: 10101 (number)
 + InvoiceRecordLegs (required, array [InvoiceReadLeg1, InvoiceReadLeg2])
 
 ## InvoiceUpdateBody (object)
@@ -508,6 +518,8 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + TaxScheme: VAT (string)
 + SchemeId: `9944` (string)
 + DocumentType: `123` (string)
++ Notes: Process with the following note (string)
++ DocmanDocumentId: 10101 (number)
 + InvoiceRecordLegs (required, array [InvoiceUpdateLeg1Create, InvoiceUpdateLeg2Create])
 
 ## InvoiceReadLeg1 (object)
