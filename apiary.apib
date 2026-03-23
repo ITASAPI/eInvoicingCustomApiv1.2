@@ -20,9 +20,9 @@ VERSION: 1.1
 ## Updated Endpoints
 
 <ul>
-<li>Invoices <b>Incoming Invoice Record List</b>: Additional Array InvoiceVatRecords,<a href="/#reference/invoices/incoming-invoice-record-list/list-incoming-invoice-records"> Link</a></li>
-<li>Invoices <b>Incoming Invoice Record Create</b>: Additional Array InvoiceVatRecords,<a href="/#reference/invoices/incoming-invoice-record-create/create-incoming-invoice-record"> Link</a></li>
-<li>Invoices <b>Incoming Invoice Record Update</b>: Additional Array InvoiceVatRecords,<a href="/#reference/invoices/incoming-invoice-record-update-delete/update-incoming-invoice-record"> Link</a></li>
+<li>Invoices <b>Incoming Invoice Record List</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId,<a href="/#reference/invoices/incoming-invoice-record-list/list-incoming-invoice-records"> Link</a></li>
+<li>Invoices <b>Incoming Invoice Record Create</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId,<a href="/#reference/invoices/incoming-invoice-record-create/create-incoming-invoice-record"> Link</a></li>
+<li>Invoices <b>Incoming Invoice Record Update</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId,<a href="/#reference/invoices/incoming-invoice-record-update-delete/update-incoming-invoice-record"> Link</a></li>
 </ul>
 <div>** ends ** </div>
 
@@ -66,7 +66,6 @@ Model Header containing AccessToken
 |SchemeId|Scheme Id|`string`|5|||
 |DocumentType|Document Type|`string`|10|||
 |Notes|Notes|`string`|4000|||
-|DocmanDocumentId|Docman Document Id|`number`||||
 |InvoiceRecordLegs|see <b><a href="/#reference/data-object-definitions/invoice-leg/invoice-leg">Invoice Legs</a></b> object|[array] of `object`||||
 |InvoiceVatRecords|see <b><a href="/#reference/data-object-definitions/invoice-vat-record/invoicevatrecord">Invoice Vat Record</a></b> object|[array] of `object`|||Required|
 
@@ -126,7 +125,6 @@ Model Header containing AccessToken
 |SchemeId|Scheme Id|`string`|5|||
 |DocumentType|Document Type|`string`|10|||
 |Notes|Notes|`string`|4000|||
-|DocmanDocumentId|Docman Document Id|`number`||||
 |InvoiceRecordLegs|see <b><a href="/#reference/data-object-definitions/invoice-leg/invoice-leg-for-create">Invoice Leg</a></b> object|[array] of `object`|||Required|
 |InvoiceVatRecords|see <b><a href="/#reference/data-object-definitions/invoice-vat-record/invoicevatrecord">Invoice Vat Record</a></b> object|[array] of `object`|||Required|
 
@@ -189,7 +187,6 @@ Model Header containing AccessToken
 |SchemeId|Scheme Id|`string`|5|||
 |DocumentType|Document Type|`string`|10|||
 |Notes|Notes|`string`|4000|||
-|DocmanDocumentId|Docman Document Id|`number`||||
 |InvoiceRecordLegs|see <b><a href="/#reference/data-object-definitions/invoice-leg/invoice-leg">Invoice Leg</a></b> object|[array] of `object`|||Required|
 |InvoiceVatRecords|see <b><a href="/#reference/data-object-definitions/invoice-vat-record/invoicevatrecord">Invoice Vat Record</a></b> object|[array] of `object`|||Required|
 
@@ -472,7 +469,6 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + SchemeId: `9944` (string)
 + DocumentType: `123` (string)
 + Notes: Received ready for processing (string)
-+ DocmanDocumentId: 10101 (number)
 + InvoiceRecordLegs (required, array [InvoiceLeg1Create, InvoiceLeg2Create])
 + InvoiceVatRecords (required, array [InvoiceCreateVat1, InvoiceCreateVat2])
 
@@ -553,7 +549,6 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + SchemeId: `9944` (string)
 + DocumentType: `123` (string)
 + Notes: Received ready for processing (string)
-+ DocmanDocumentId: 10101 (number)
 + InvoiceRecordLegs (required, array [InvoiceReadLeg1, InvoiceReadLeg2])
 + InvoiceVatRecords (required, array [InvoiceReadVat1, InvoiceReadVat2])
 
@@ -578,7 +573,6 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + SchemeId: `9944` (string)
 + DocumentType: `123` (string)
 + Notes: Process with the following note (string)
-+ DocmanDocumentId: 10101 (number)
 + InvoiceRecordLegs (required, array [InvoiceUpdateLeg1Create, InvoiceUpdateLeg2Create])
 + InvoiceVatRecords (required, array [InvoiceReadVat1, InvoiceReadVat2])
 
