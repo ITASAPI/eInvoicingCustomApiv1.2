@@ -20,9 +20,9 @@ VERSION: 1.1
 ## Updated Endpoints
 
 <ul>
-<li>Invoices <b>Incoming Invoice Record List</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId,<a href="/#reference/invoices/incoming-invoice-record-list/list-incoming-invoice-records"> Link</a></li>
-<li>Invoices <b>Incoming Invoice Record Create</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId,<a href="/#reference/invoices/incoming-invoice-record-create/create-incoming-invoice-record"> Link</a></li>
-<li>Invoices <b>Incoming Invoice Record Update</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId,<a href="/#reference/invoices/incoming-invoice-record-update-delete/update-incoming-invoice-record"> Link</a></li>
+<li>Invoices <b>Incoming Invoice Record List</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId, Additional Property on InvoiceRecordLeg - BaseQuantity,<a href="/#reference/invoices/incoming-invoice-record-list/list-incoming-invoice-records"> Link</a></li>
+<li>Invoices <b>Incoming Invoice Record Create</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId, Additional Property on InvoiceRecordLeg - BaseQuantity,<a href="/#reference/invoices/incoming-invoice-record-create/create-incoming-invoice-record"> Link</a></li>
+<li>Invoices <b>Incoming Invoice Record Update</b>: Additional Array InvoiceVatRecords, remove property DocmanDocumentId, Additional Property on InvoiceRecordLeg - BaseQuantity,<a href="/#reference/invoices/incoming-invoice-record-update-delete/update-incoming-invoice-record"> Link</a></li>
 </ul>
 <div>** ends ** </div>
 
@@ -293,6 +293,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 |StartPeriod|Start Period|`datetime`||||
 |EndPeriod|End Period|`datetime`||||
 |FreeFormatNote|Free Format Note|`string`|255|||
+|BaseQuantity|Base Quantity|`number`||||
 
 
 <br /><br />
@@ -317,6 +318,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 |StartPeriod|Start Period|`datetime`||||
 |EndPeriod|End Period|`datetime`||||
 |FreeFormatNote|Free Format Note|`string`|255|||
+|BaseQuantity|Base Quantity|`number`||||
 
 + Response 200 (application/json; charset=utf-8)
 + Attributes (InvoiceUpdateLeg1Create)
@@ -491,6 +493,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + StartPeriod: `2025-07-14T00:00:00Z` (string)
 + EndPeriod: `2025-07-28T00:00:00Z` (string)
 + FreeFormatNote: Notes section (string)
++ BaseQuantity: 300.00 (number)
 
 ## InvoiceLeg2Create (object)
 + Quantity: 200.00 (required, number)
@@ -508,6 +511,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + StartPeriod: `2025-07-14T00:00:00Z` (string)
 + EndPeriod: `2025-07-28T00:00:00Z` (string)
 + FreeFormatNote: Notes section (string)
++ BaseQuantity: 100.00 (number)
 
 ## InvoiceCreateVat1 (object)
 + ExternalVatCode: S5 (string)
@@ -594,6 +598,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + StartPeriod: `2025-07-14T00:00:00Z` (string)
 + EndPeriod: `2025-07-28T00:00:00Z` (string)
 + FreeFormatNote: Notes section (string)
++ BaseQuantity: 300.00 (number)
 
 
 ## InvoiceReadLeg2 (object)
@@ -614,6 +619,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + StartPeriod: `2025-07-14T00:00:00Z` (string)
 + EndPeriod: `2025-07-28T00:00:00Z` (string)
 + FreeFormatNote: Notes section (string)
++ BaseQuantity: 100.00 (number)
 
 ## InvoiceReadVat1 (object)
 + InvoiceRecordId: 1 (number)
@@ -656,6 +662,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + StartPeriod: `2025-07-14T00:00:00Z` (string)
 + EndPeriod: `2025-07-28T00:00:00Z` (string)
 + FreeFormatNote: Notes section (string)
++ BaseQuantity: 300.00 (number)
 
 
 ## InvoiceUpdateLeg2Create (object)
@@ -676,6 +683,7 @@ A multipurpose object which can be used by several endpoints and with multiple s
 + StartPeriod: `2025-07-14T00:00:00Z` (string)
 + EndPeriod: `2025-07-28T00:00:00Z` (string)
 + FreeFormatNote: Notes section (string)
++ BaseQuantity: 100.00 (number)
 
 
 ## Pagination (object)
